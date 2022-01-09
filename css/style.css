@@ -43,7 +43,7 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: bottom;
     border: none;
 }
@@ -97,7 +97,8 @@ h1 {
 /* Have a happy day,ABOUT US,MENU,EVENTのwidth指定 */
 .happyday,
 .Kodawari,
-.MENU {
+.MENU,
+.EVENT {
     width: 1020px;
     margin: 0 auto;
     padding: 0 10px;
@@ -144,7 +145,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1030px;
+    max-width: 1020px;
 }
 
 /* ラテアート画像 */
@@ -169,7 +170,6 @@ h1 {
 
 .we {
     font-size: 44px;
-    /* max-width: 100%; */
     padding: 0px 0px 25px 80px;
 }
 
@@ -187,7 +187,7 @@ h1 {
     padding: 0px 0px 150px 85px;
 }
 
-/* MENU画像 */
+/* MENUタイトル */
 .menu img {
     width: 150px;
     height: 85px;
@@ -195,13 +195,157 @@ h1 {
 }
 
 .menu {
-    padding: 0px 0px 50px 0px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
-/* メニューリスト */
+/* メニュー3つ*/
 
 .menu_list {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+/* メニュー画像 */
+.img_Drink img,
+.img_Food img,
+.img_Sweets img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+}
+
+/* メニュータイトル */
+.menu_list h3 {
+    font-size: 38px;
+    color: #d30202;
+    padding: 0 0 20px 10px;
+    margin-top: -10px;
+}
+
+/* メニュー説明文 */
+.p_Drink,
+.p_Food,
+.p_Sweets {
+    font-size: 17px;
+    line-height: 1.4705;
+    width: 315px;
+}
+
+/* ギャラリータイトル */
+.gallery img {
+    width: 220px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.gallery {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/* ギャラリー画像 */
+.GALLERY_photo {
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.GALLERY_photo li {
+    max-width: 100%;
+    text-align: center;
+}
+
+.GALLERY {
+    padding-bottom: 70px;
+}
+
+/* イベントタイトル */
+.event img {
+    width: 160px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.event {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+/* イベント 枠 */
+
+.event_list {
+    border: solid 4px;
+    border-color: #4f260b;
+    background-color: #ffffff;
+    padding: 30px 160px;
+    margin-bottom: 80px;
+}
+
+.event1,
+.event2,
+.event3 {
+    display: flex;
+    text-align: center;
+    font-size: 23px;
+}
+
+.News {
+    padding-left: 45px;
+}
+
+/* アクセス */
+.access img {
+    width: 190px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.access {
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+/* マップ */
+
+.map {
+    width: 100%;
+    height: 470px;
+    text-align: center;
+}
+
+/* フッター */
+
+footer {
+    color: #000;
+    background-color: #ffffff;
+    width: 100%;
+    height: 390px;
+    padding-top: 80px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 815px 82px 460px;
+}
+
+.footer_logo {
+    width: 210px;
+    height: 55px;
+}
+
+.time,
+.address,
+.address2 {
+    padding-bottom: 23px;
+}
+
+.copy {
+    font-size: 16px;
+    text-align: center;
 }
