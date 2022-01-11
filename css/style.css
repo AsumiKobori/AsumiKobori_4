@@ -363,7 +363,7 @@ footer {
 .to_top_button {
     position: fixed;
     bottom: 230px;
-    right: 307px;
+    right: 15.989%;
     z-index: 10000;
     max-width: 125px;
 }
