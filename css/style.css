@@ -156,6 +156,11 @@ h1 {
     border-bottom-right-radius: 100px;
 }
 
+.ABOUT_US,
+.latteart {
+    max-width: 45%;
+}
+
 /* ABOUT US 画像 */
 .about_us img {
     width: 245px;
@@ -163,19 +168,19 @@ h1 {
 }
 
 .about_us {
-    padding: 0px 0px 55px 75px;
+    padding-bottom: 55px;
 }
 
 /* 私たちが提供するこだわりのコーヒー */
 
 .we {
     font-size: 44px;
-    padding: 0px 0px 25px 80px;
+    padding-bottom: 25px;
 }
 
 .we2 {
     font-size: 44px;
-    padding: 0px 0px 40px 80px;
+    padding-bottom: 40px;
 }
 
 /* サービスを～ */
@@ -184,7 +189,7 @@ h1 {
     font-size: 16px;
     max-width: 410px;
     line-height: 1.625;
-    padding: 0px 0px 150px 85px;
+    padding-bottom: 150px;
 }
 
 /* MENUタイトル */
@@ -206,13 +211,15 @@ h1 {
     justify-content: space-between;
     padding-bottom: 100px;
 }
+.menu_list li {
+    width: 30%;
+}
 
 /* メニュー画像 */
 .img_Drink img,
 .img_Food img,
 .img_Sweets img {
     width: 300px;
-    height: 200px;
     object-fit: cover;
     border-top-right-radius: 50px;
 }
@@ -248,14 +255,13 @@ h1 {
 
 /* ギャラリー画像 */
 .GALLERY_photo {
-    width: 1920px;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
 }
 
 .GALLERY_photo li {
     max-width: 100%;
-    text-align: center;
 }
 
 .GALLERY {
@@ -277,6 +283,10 @@ h1 {
 /* イベント 枠 */
 
 .event_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
     border: solid 4px;
     border-color: #4f260b;
     background-color: #ffffff;
@@ -284,9 +294,7 @@ h1 {
     margin-bottom: 80px;
 }
 
-.event1,
-.event2,
-.event3 {
+.event_li {
     display: flex;
     text-align: center;
     font-size: 23px;
@@ -294,6 +302,7 @@ h1 {
 
 .News {
     padding-left: 45px;
+    text-decoration: underline;
 }
 
 /* アクセス */
@@ -321,22 +330,22 @@ h1 {
 footer {
     color: #000;
     background-color: #ffffff;
-    width: 100%;
-    height: 390px;
     padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
 }
 
 .company {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    height: 135px;
+    padding-left: 25%;
     font-size: 20px;
-    padding: 0 815px 82px 460px;
+    max-width: 635px;
 }
 
 .footer_logo {
-    width: 210px;
-    height: 55px;
+    max-width: 210px;
 }
 
 .time,
@@ -348,4 +357,13 @@ footer {
 .copy {
     font-size: 16px;
     text-align: center;
+    margin-top: 80px;
+}
+
+.to_top_button {
+    position: fixed;
+    bottom: 230px;
+    right: 307px;
+    z-index: 10000;
+    max-width: 125px;
 }
