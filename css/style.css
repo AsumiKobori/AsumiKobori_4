@@ -99,7 +99,6 @@ h1 {
 .Kodawari,
 .MENU,
 .EVENT {
-    width: 1020px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -146,29 +145,31 @@ h1 {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1020px;
+    padding-bottom: 105px;
 }
 
 /* ラテアート画像 */
 .latteart img {
-    width: 500px;
-    height: 560px;
     object-fit: cover;
     border-bottom-right-radius: 100px;
 }
 
 .ABOUT_US,
 .latteart {
-    max-width: 45%;
+    width: 50%;
 }
 
 /* ABOUT US 画像 */
 .about_us img {
     width: 245px;
-    height: 85px;
 }
 
 .about_us {
     padding-bottom: 55px;
+}
+
+.ABOUT_US {
+    padding-left: 4.4271%;
 }
 
 /* 私たちが提供するこだわりのコーヒー */
@@ -189,13 +190,11 @@ h1 {
     font-size: 16px;
     max-width: 410px;
     line-height: 1.625;
-    padding-bottom: 150px;
 }
 
 /* MENUタイトル */
 .menu img {
     width: 150px;
-    height: 85px;
     margin: 0 auto;
 }
 
@@ -209,6 +208,8 @@ h1 {
 .menu_list {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
     padding-bottom: 100px;
 }
 .menu_list li {
@@ -219,7 +220,7 @@ h1 {
 .img_Drink img,
 .img_Food img,
 .img_Sweets img {
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     border-top-right-radius: 50px;
 }
@@ -238,13 +239,11 @@ h1 {
 .p_Sweets {
     font-size: 17px;
     line-height: 1.4705;
-    width: 315px;
 }
 
 /* ギャラリータイトル */
 .gallery img {
     width: 220px;
-    height: 85px;
     margin: 0 auto;
 }
 
@@ -255,13 +254,13 @@ h1 {
 
 /* ギャラリー画像 */
 .GALLERY_photo {
-    max-width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .GALLERY_photo li {
-    max-width: 100%;
+    width: 100%;
 }
 
 .GALLERY {
@@ -270,8 +269,7 @@ h1 {
 
 /* イベントタイトル */
 .event img {
-    width: 160px;
-    height: 85px;
+    max-width: 160px;
     margin: 0 auto;
 }
 
@@ -286,12 +284,13 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 110px;
+    max-width: 685px;
     border: solid 4px;
     border-color: #4f260b;
     background-color: #ffffff;
     padding: 30px 160px;
     margin-bottom: 80px;
+    margin: 0 auto;
 }
 
 .event_li {
@@ -308,7 +307,6 @@ h1 {
 /* アクセス */
 .access img {
     width: 190px;
-    height: 85px;
     margin: 0 auto;
 }
 
@@ -362,8 +360,8 @@ footer {
 
 .to_top_button {
     position: fixed;
-    bottom: 230px;
-    right: 15.989%;
+    bottom: 20px;
+    right: 20px;
     z-index: 10000;
-    max-width: 125px;
+    width: 125px;
 }
