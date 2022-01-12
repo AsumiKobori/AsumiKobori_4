@@ -94,7 +94,7 @@ h1 {
     width: 100%;
 }
 
-/* Have a happy day,ABOUT US,MENU,EVENTのwidth指定 */
+/* Have a happy day,ABOUT US,MENU,EVENTのwidth */
 .happyday,
 .Kodawari,
 .MENU,
@@ -152,11 +152,16 @@ h1 {
 .latteart img {
     object-fit: cover;
     border-bottom-right-radius: 100px;
+    width: 100%;
 }
 
-.ABOUT_US,
-.latteart {
+.ABOUT_US {
     width: 50%;
+    /* padding-left: 4.4271%; */
+}
+
+.latteart {
+    width: 41%;
 }
 
 /* ABOUT US 画像 */
@@ -168,20 +173,16 @@ h1 {
     padding-bottom: 55px;
 }
 
-.ABOUT_US {
-    padding-left: 4.4271%;
-}
-
 /* 私たちが提供するこだわりのコーヒー */
 
 .we {
     font-size: 44px;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .we2 {
     font-size: 44px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 /* サービスを～ */
@@ -268,6 +269,12 @@ h1 {
 }
 
 /* イベントタイトル */
+
+.EVENT {
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+
 .event img {
     max-width: 160px;
     margin: 0 auto;
@@ -289,7 +296,6 @@ h1 {
     border-color: #4f260b;
     background-color: #ffffff;
     padding: 30px 160px;
-    margin-bottom: 80px;
     margin: 0 auto;
 }
 
@@ -336,7 +342,6 @@ footer {
 .company {
     display: flex;
     justify-content: space-between;
-    height: 135px;
     padding-left: 25%;
     font-size: 20px;
     max-width: 635px;
