@@ -101,6 +101,7 @@ h1 {
 .EVENT {
     margin: 0 auto;
     padding: 0 10px;
+    max-width: 1020px;
 }
 
 /* Have a happy day From a cup of coffee. */
@@ -290,7 +291,6 @@ h1 {
 .event_list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     max-width: 685px;
     border: solid 4px;
     border-color: #4f260b;
@@ -303,6 +303,11 @@ h1 {
     display: flex;
     text-align: center;
     font-size: 23px;
+    line-height: 1.5;
+}
+
+.event_li + .event_li {
+    padding-top: 15px;
 }
 
 .News {
@@ -337,18 +342,19 @@ footer {
     padding-top: 80px;
     padding-bottom: 80px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .company {
     display: flex;
-    justify-content: space-between;
-    padding-left: 25%;
     font-size: 20px;
-    max-width: 635px;
+    max-width: 1020px;
+    margin: 0 auto;
 }
 
 .footer_logo {
     max-width: 210px;
+    padding-right: 85px;
 }
 
 .time,
@@ -361,6 +367,7 @@ footer {
     font-size: 16px;
     text-align: center;
     margin-top: 80px;
+    max-width: 100%;
 }
 
 .to_top_button {
