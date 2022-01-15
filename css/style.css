@@ -147,6 +147,7 @@ h1 {
     margin: 0 auto;
     max-width: 1020px;
     padding-bottom: 105px;
+    align-items: center;
 }
 
 /* ラテアート画像 */
@@ -158,7 +159,8 @@ h1 {
 
 .ABOUT_US {
     width: 50%;
-    /* padding-left: 4.4271%; */
+    padding-left: 7.5%;
+    box-sizing: border-box;
 }
 
 .latteart {
@@ -167,7 +169,7 @@ h1 {
 
 /* ABOUT US 画像 */
 .about_us img {
-    width: 245px;
+    width: 50%;
 }
 
 .about_us {
@@ -190,7 +192,6 @@ h1 {
 
 .service {
     font-size: 16px;
-    max-width: 410px;
     line-height: 1.625;
 }
 
@@ -210,8 +211,6 @@ h1 {
 .menu_list {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1000px;
     padding-bottom: 100px;
 }
 .menu_list li {
@@ -278,7 +277,6 @@ h1 {
 
 .event img {
     max-width: 160px;
-    margin: 0 auto;
 }
 
 .event {
@@ -289,19 +287,15 @@ h1 {
 /* イベント 枠 */
 
 .event_list {
-    display: flex;
-    flex-direction: column;
-    max-width: 685px;
     border: solid 4px;
     border-color: #4f260b;
     background-color: #ffffff;
-    padding: 30px 160px;
+    padding: 30px 15.65%;
     margin: 0 auto;
 }
 
 .event_li {
     display: flex;
-    text-align: center;
     font-size: 23px;
     line-height: 1.5;
 }
@@ -312,7 +306,7 @@ h1 {
 
 .News {
     padding-left: 45px;
-    text-decoration: underline;
+    text-decoration: underline #000;
 }
 
 /* アクセス */
@@ -331,7 +325,6 @@ h1 {
 .map {
     width: 100%;
     height: 470px;
-    text-align: center;
 }
 
 /* フッター */
@@ -350,6 +343,7 @@ footer {
     font-size: 20px;
     max-width: 1020px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer_logo {
@@ -357,10 +351,12 @@ footer {
     padding-right: 85px;
 }
 
-.time,
-.address,
-.address2 {
+.company_access li {
     padding-bottom: 23px;
+}
+
+.company_access li:last-child {
+    padding-bottom: 0px;
 }
 
 .copy {
