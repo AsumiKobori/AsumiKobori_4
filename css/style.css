@@ -101,7 +101,7 @@ h1 {
 .EVENT {
     margin: 0 auto;
     padding: 0 10px;
-    max-width: 1020px;
+    max-width: 1000px;
 }
 
 /* Have a happy day From a cup of coffee. */
@@ -154,23 +154,23 @@ h1 {
 }
 
 .latteart {
-    width: 41%;
+    width: 50%;
 }
 
 /* ABOUT US 画像 */
 .about_us img {
-    width: 50%;
+    width: 272px;
 }
 
 .about_us {
-    padding-bottom: 55px;
+    padding-bottom: 46px;
 }
 
 /* 私たちが提供するこだわりのコーヒー */
 
 .we {
     font-size: 44px;
-    margin-bottom: 22px;
+    margin-bottom: 17px;
     line-height: 1.3863;
 }
 
@@ -362,8 +362,11 @@ footer {
     width: 125px;
 }
 
+/* スマホ用記述を隠す */
 .sp_nav,
-.sp_btn {
+.sp_btn,
+.about_us_sp,
+.calm_space_sp {
     display: none;
 }
 
@@ -371,11 +374,12 @@ footer {
     .pc_nav {
         display: none;
     }
+
     .sp_btn {
         display: block;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 22px;
+        right: 25px;
         height: 30px;
         cursor: pointer;
         z-index: 100;
@@ -445,5 +449,80 @@ footer {
         color: #fff;
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
             "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+
+    .cup_of_coffee {
+        font-size: 70px;
+    }
+
+    .calm_space {
+        font-size: 20px;
+    }
+
+    .we {
+        font-size: 39px;
+    }
+
+    .service {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* ヘッダー */
+
+    h1 {
+        width: 173.58px;
+    }
+
+    /* Have a happy day From a cup of coffee. */
+    .Happycoffee {
+        font-size: 17px;
+        margin: 42px 0 28px 0;
+    }
+    /* ハッピーに溢れる1日を1杯のコーヒーから。 */
+    .cup_of_coffee {
+        font-size: 38px;
+        line-height: 1.1579;
+        margin-bottom: 25px;
+    }
+
+    /* 毎日を丁寧に大切に過ごしたい。～こだわりのコーヒーを提供したい。 */
+
+    .calm_space_pc {
+        display: none;
+    }
+
+    .calm_space_sp {
+        display: flex;
+        font-size: 16px;
+        line-height: 1.875;
+        margin-bottom: 65px;
+    }
+
+    /* ABOUT US箇所全体 */
+
+    .Kodawari {
+        display: block;
+    }
+
+    /* ABOUT US画像入れ替え */
+    .about_us_pc {
+        display: none;
+    }
+
+    .about_us_sp {
+        display: block;
+        text-align: center;
+        margin-bottom: 17px;
+        padding: 0;
+    }
+
+    .about_us_sp img {
+        width: 141px;
+    }
+
+    .latteart img {
+        border-radius: 0;
     }
 }
