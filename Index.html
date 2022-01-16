@@ -7,29 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ小堀</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 
 <body>
 
-    <header>
+    <header id="header_top">
         <div class=" header_wrap">
             <h1 class="header_logo">
                 <img src="images/design_cafe_logo_header@2x.png" alt="デザインカフェのロゴ">
             </h1>
-            <ul class="pc_nav">
 
-                <li><a href=""></a>ABOUT US</li>
-                <li><a href=""></a>MENU</li>
-                <li><a href=""></a>GALLERY</li>
-                <li><a href=""></a>EVENT</li>
-                <li><a href=""></a>ACCESS</li>
+            <nav class="pc_nav">
+                <ul>
 
-            </ul>
+                    <li><a href="#img_latteart">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#event_img">EVENT</a></li>
+                    <li><a href="#ACCESS">ACCESS</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="sp_btn">
+                <span></span>
+            </div>
+
+            <nav class="sp_nav">
+                <ul>
+
+                    <li><a href="#img_latteart">ABOUT US</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#event_img">EVENT</a></li>
+                    <li><a href="#ACCESS">ACCESS</a></li>
+
+                </ul>
+            </nav>
+
         </div>
         <div class="slider">
-            <img src="images/pc_first-100.jpg" alt="カフェの様子">
+            <picture>
+                <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                <img src="images/pc_first-100.jpg" alt="カフェの様子">
+            </picture>
         </div>
+
 
     </header>
 
@@ -38,12 +63,12 @@
         <p class="Happycoffee">Have a happy day From a cup of coffee.</p>
 
         <!-- ハッピーに溢れる1日を1杯のコーヒーから。 -->
-        <p class="cup_of_coffee">ハッピーに溢れる1日を</p>
-        <p class="cup_of_coffee2">1杯のコーヒーから。</p>
+        <p class="cup_of_coffee">ハッピーに溢れる1日を<br>
+            1杯のコーヒーから。</p>
 
         <!-- 毎日を丁寧に大切に過ごしたい。～こだわりのコーヒーを提供したい。 -->
-        <p class="calm_space">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ</p>
-        <p class="calm_space2">足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+        <p class="calm_space">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
 
     </section>
 
@@ -53,7 +78,7 @@
         <!-- ラテアート写真 -->
         <div class="latteart">
 
-            <p class="img_latteart"><img src="images/pc_about-100.jpg" alt="ラテアート写真"></p>
+            <p id="img_latteart"><img src="images/pc_about-100.jpg" alt="ラテアート写真"></p>
 
         </div>
 
@@ -61,8 +86,8 @@
             <h2 class="about_us"><img src="images/about_us@2x.png" alt="ABOUT US"></h2>
 
             <!-- 私たちが提供するこだわりのコーヒー     -->
-            <p class="we">私たちが提供する</p>
-            <p class="we2">こだわりのコーヒー</p>
+            <p class="we">私たちが提供する<br>
+                こだわりのコーヒー</p>
 
             <!-- サービスを～ -->
             <p class="service">
@@ -75,7 +100,7 @@
     </section>
 
     <!-- MENU全体 -->
-    <section class="MENU">
+    <section id="MENU">
 
         <h2 class="menu"><img src="images/menu@2x.png" alt="メニュータイトル"></h2>
 
@@ -84,33 +109,33 @@
             <!-- Drink -->
             <li class="Drink">
 
-                <p class="img_Drink"><img src="images/pc_menu_drink-100.jpg" alt="ドリンク画像"></p>
+                <p class="img_DFS"><img src="images/pc_menu_drink-100.jpg" alt="ドリンク画像"></p>
 
                 <h3 class="title_Drink">Drink</h3>
 
-                <p class="p_Drink">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                <p class="p_DFS">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
 
             </li>
 
             <!-- Food -->
             <li class="Food">
 
-                <p class="img_Food"><img src="images/pc_menu_food-100.jpg" alt="フード画像"></p>
+                <p class="img_DFS"><img src="images/pc_menu_food-100.jpg" alt="フード画像"></p>
 
                 <h3 class="title_Food">Food</h3>
 
-                <p class="p_Food">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                <p class="p_DFS">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
 
             </li>
 
             <!-- Sweets -->
             <li class="Sweets">
 
-                <p class="img_Sweets"><img src="images/pc_menu_sweets-100.jpg" alt="スイーツ画像"></p>
+                <p class="img_DFS"><img src="images/pc_menu_sweets-100.jpg" alt="スイーツ画像"></p>
 
                 <h3 class="title_Sweets">Sweets</h3>
 
-                <p class="p_Sweets">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
+                <p class="p_DFS">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
 
             </li>
 
@@ -119,7 +144,7 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="GALLERY">
+    <section id="GALLERY">
 
         <h2 class="gallery"><img src="images/gallery@2x.png" alt="GALLERY"></h2>
 
@@ -139,7 +164,7 @@
     <!-- EVENT -->
     <section class="EVENT">
 
-        <h2 class="event"><img src="images/event@2x.png" alt="EVENT"></h2>
+        <h2 class="event"><img id="event_img" src="images/event@2x.png" alt="EVENT"></h2>
 
         <div class="event_waku">
             <ul class="event_list">
@@ -165,7 +190,7 @@
     </section>
 
     <!-- ACCESS -->
-    <section class="ACCESS">
+    <section id="ACCESS">
 
         <h2 class="access"><img src="images/access@2x.png" alt="ACCESS"></h2>
 
@@ -204,7 +229,20 @@
 
     </footer>
 
-    <p class="to_top_button"><img src="images/to_top@2x.png" alt="トップへ戻るボタン"></p>
+    <p class="to_top_button"><a href="#header_top"><img src="images/to_top@2x.png" alt="トップへ戻るボタン"></a></p>
+
+    <script>
+
+        $(function () {
+
+            $('.sp_btn').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+
+        });
+
+    </script>
 
 </body>
 

@@ -72,7 +72,7 @@ h1 {
     width: 226.78px;
 }
 
-.pc_nav {
+.pc_nav ul {
     display: flex;
 }
 
@@ -118,12 +118,7 @@ h1 {
     font-size: 82px;
     text-align: center;
     margin-bottom: 35px;
-}
-
-.cup_of_coffee2 {
-    font-size: 82px;
-    text-align: center;
-    margin-bottom: 50px;
+    line-height: 1.1707;
 }
 
 /* 毎日を丁寧に大切に過ごしたい。～こだわりのコーヒーを提供したい。 */
@@ -131,12 +126,7 @@ h1 {
 .calm_space {
     font-size: 23px;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.calm_space2 {
-    font-size: 23px;
-    text-align: center;
+    line-height: 1.1652;
     margin-bottom: 100px;
 }
 
@@ -148,11 +138,11 @@ h1 {
     max-width: 1020px;
     padding-bottom: 105px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 /* ラテアート画像 */
 .latteart img {
-    object-fit: cover;
     border-bottom-right-radius: 100px;
     width: 100%;
 }
@@ -180,12 +170,8 @@ h1 {
 
 .we {
     font-size: 44px;
-    margin-bottom: 25px;
-}
-
-.we2 {
-    font-size: 44px;
-    margin-bottom: 40px;
+    margin-bottom: 22px;
+    line-height: 1.3863;
 }
 
 /* サービスを～ */
@@ -212,17 +198,16 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .menu_list li {
     width: 30%;
 }
 
 /* メニュー画像 */
-.img_Drink img,
-.img_Food img,
-.img_Sweets img {
+.img_DFS img {
     width: 100%;
-    object-fit: cover;
     border-top-right-radius: 50px;
 }
 
@@ -235,9 +220,7 @@ h1 {
 }
 
 /* メニュー説明文 */
-.p_Drink,
-.p_Food,
-.p_Sweets {
+.p_DFS {
     font-size: 17px;
     line-height: 1.4705;
 }
@@ -258,6 +241,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .GALLERY_photo li {
@@ -292,12 +276,16 @@ h1 {
     background-color: #ffffff;
     padding: 30px 15.65%;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
 .event_li {
     display: flex;
     font-size: 23px;
-    line-height: 1.5;
+}
+
+.event_li p {
+    line-height: 1.9565;
 }
 
 .event_li + .event_li {
@@ -372,4 +360,90 @@ footer {
     right: 20px;
     z-index: 10000;
     width: 125px;
+}
+
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .pc_nav {
+        display: none;
+    }
+    .sp_btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_btn span {
+        background: #fff;
+        width: 35px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 10px;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background: #fff;
+        width: 35px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: rgba(000, 000, 000, 0.8);
+        width: 100%;
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sp_nav li {
+        text-align: center;
+        font-size: 18px;
+        padding: 15px;
+        color: #fff;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
 }
