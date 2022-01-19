@@ -159,7 +159,7 @@ h1 {
 
 /* ABOUT US 画像 */
 .about_us img {
-    width: 272px;
+    max-width: 272px;
 }
 
 .about_us {
@@ -183,7 +183,7 @@ h1 {
 
 /* MENUタイトル */
 .menu img {
-    width: 150px;
+    max-width: 150px;
     margin: 0 auto;
 }
 
@@ -227,8 +227,7 @@ h1 {
 
 /* ギャラリータイトル */
 .gallery img {
-    width: 220px;
-    margin: 0 auto;
+    max-width: 220px;
 }
 
 .gallery {
@@ -299,7 +298,7 @@ h1 {
 
 /* アクセス */
 .access img {
-    width: 190px;
+    max-width: 190px;
     margin: 0 auto;
 }
 
@@ -336,7 +335,7 @@ footer {
 
 .footer_logo {
     max-width: 210px;
-    padding-right: 85px;
+    padding-right: 80px;
 }
 
 .company_access li {
@@ -358,8 +357,8 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 10000;
-    width: 125px;
+    z-index: 100;
+    max-width: 125px;
 }
 
 /* スマホ用記述を隠す */
@@ -487,12 +486,14 @@ footer {
     .Happycoffee {
         font-size: 17px;
         margin: 42px 0 28px 0;
+        max-width: 767px;
     }
     /* ハッピーに溢れる1日を1杯のコーヒーから。 */
     .cup_of_coffee {
         font-size: 38px;
         line-height: 1.1579;
         margin-bottom: 25px;
+        max-width: 767px;
     }
 
     /* 毎日を丁寧に大切に過ごしたい。～こだわりのコーヒーを提供したい。 */
@@ -503,6 +504,7 @@ footer {
 
     .calm_space_sp {
         display: flex;
+        display: block;
         font-size: 16px;
         line-height: 1.875;
         margin-bottom: 65px;
@@ -530,10 +532,197 @@ footer {
     /* ラテアート画像 */
 
     .latteart {
-        width: 100%;
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        padding-bottom: 35px;
     }
 
     .latteart img {
         border-radius: 0;
+    }
+
+    /* ABOUT US全体 */
+    .ABOUT_US {
+        margin-left: 5.3%;
+        margin-bottom: 60px;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* 私たちが提供するこだわりのコーヒー */
+    .we {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .service {
+        font-size: 16px;
+        line-height: 1.75;
+        width: 89.3%;
+    }
+
+    /* MENU */
+
+    .MENU {
+        max-width: 767px;
+    }
+
+    /* メニュータイトル */
+    .menu {
+        padding-bottom: 22px;
+        width: 22.9%;
+        margin: 0 auto;
+    }
+
+    .menu img {
+        max-width: 86px;
+    }
+
+    /* メニュー3つ */
+    .menu_list {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .menu_list li {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .img_DFS {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .menu_list h3 {
+        font-size: 40px;
+        padding: 0 0 0 12%;
+        margin-bottom: 5px;
+    }
+
+    .p_DFS {
+        font-size: 17px;
+        line-height: 1.5882;
+        width: 83%;
+        margin: 0 auto;
+    }
+
+    .menu_list li:last-child {
+        margin-bottom: 90px;
+    }
+
+    /* GALLERY */
+
+    /* ギャラリータイトル */
+    .gallery img {
+        width: 34.13%;
+    }
+
+    /* ギャラリー画像 */
+    .GALLERY_photo {
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        margin-bottom: 34px;
+    }
+
+    .gallery {
+        padding-bottom: 20x;
+    }
+
+    /* EVENT */
+
+    /* イベントタイトル */
+
+    .event {
+        padding-bottom: 20px;
+    }
+
+    .event img {
+        width: 24.8%;
+    }
+
+    /* イベント枠 */
+
+    .event_list {
+        border: solid 3px;
+        padding: 18px 7.2%;
+        margin: 0 5.33% 33px 5.33%;
+    }
+
+    .event_li {
+        display: block;
+        padding-bottom: 21px;
+    }
+
+    .event_li + .event_li {
+        padding-top: 0;
+    }
+
+    .event_list li:last-child {
+        padding-bottom: 0;
+    }
+
+    .event_li p {
+        line-height: 1;
+        font-size: 16px;
+    }
+
+    .News {
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* ACCESS */
+
+    /* アクセスタイトル */
+
+    .access {
+        padding-bottom: 1px;
+    }
+
+    .access img {
+        width: 29%;
+    }
+
+    /* マップリンク */
+
+    .map {
+        width: 100%;
+    }
+
+    /* フッター */
+
+    .footer {
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+
+    .footer_logo {
+        margin-bottom: 35px;
+    }
+
+    .company {
+        display: block;
+        width: 84.2%;
+    }
+
+    .company_access li {
+        font-size: 18px;
+        line-height: 1.7222;
+        padding: 0;
+    }
+
+    .copy p {
+        font-size: 16px;
+    }
+    .to_top_button {
+        position: fixed;
+        bottom: 54.66%;
+        right: 5.33%;
+        z-index: 100;
+        width: 26.66%;
     }
 }
