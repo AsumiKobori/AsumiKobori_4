@@ -469,13 +469,21 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    .happyday,
+    .Kodawari,
+    .MENU,
+    .EVENT {
+        padding: 0;
+    }
+
     /* ヘッダー */
 
     h1 {
-        width: 173.58px;
+        width: 46.4%;
     }
 
     /* Have a happy day From a cup of coffee. */
+
     .Happycoffee {
         font-size: 17px;
         margin: 42px 0 28px 0;
@@ -514,12 +522,15 @@ footer {
     .about_us_sp {
         display: block;
         text-align: center;
-        margin-bottom: 17px;
-        padding: 0;
+        margin: 0 auto;
+        padding-bottom: 17px;
+        width: 37.6%;
     }
 
-    .about_us_sp img {
-        width: 141px;
+    /* ラテアート画像 */
+
+    .latteart {
+        width: 100%;
     }
 
     .latteart img {
