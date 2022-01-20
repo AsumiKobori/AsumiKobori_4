@@ -587,7 +587,7 @@ footer {
 
     .menu_list li {
         width: 100%;
-        margin-bottom: 70px;
+        padding-bottom: 70px;
     }
 
     .img_DFS {
@@ -606,6 +606,7 @@ footer {
     }
 
     .menu_list li:last-child {
+        padding-bottom: 0;
         margin-bottom: 90px;
     }
 
