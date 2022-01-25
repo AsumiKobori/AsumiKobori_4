@@ -220,7 +220,7 @@
     <!-- フッター -->
     <footer>
 
-        <div class="company">
+        <section class="company">
 
             <h3 class="footer_logo"><img src="images/design_cafe_logo_footer@2x.png" alt="デザインカフェのロゴ"></h3>
 
@@ -233,7 +233,7 @@
 
             </ul>
 
-        </div>
+        </section>
 
         <div class="copy">
 
@@ -241,12 +241,14 @@
 
         </div>
 
+
     </footer>
 
-    <p class="to_top_button"><a href="#header_top"><img src="images/to_top@2x.png" alt="トップへ戻るボタン"></a></p>
+    <p class="to_top_button" id="fadeout"><a href="#header_top"><img src="images/to_top@2x.png" alt="トップへ戻るボタン"></a></p>
 
     <script>
 
+        // スマホ版ハンバーガーメニュークリックで前面にメニュー
         $(function () {
 
             $('.sp_btn,sp_nav a').click(function () {
@@ -254,6 +256,32 @@
                 $('.sp_btn').toggleClass('open')
             });
 
+        });
+
+
+        // ページ内リンクをゆっくり
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                let speed = 500;
+                let href = $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({ scrollTop: position }, speed, "swing");
+                return false;
+            });
+        });
+
+        // トップへボタン50pxスクロールしたら表示
+        $(function () {
+            var pagetop = $('#fadeout');
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
         });
 
     </script>
