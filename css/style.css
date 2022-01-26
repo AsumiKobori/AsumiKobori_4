@@ -543,10 +543,9 @@ footer {
 
     /* ABOUT US全体 */
     .ABOUT_US {
-        margin: 0 2.13% 60px 5.3%;
+        margin: 0 5.33% 60px 5.3%;
         padding: 0;
-        width: 89.3%;
-        text-align: left;
+        width: auto;
     }
 
     /* 私たちが提供するこだわりのコーヒー */
@@ -704,8 +703,10 @@ footer {
 
     .company {
         display: block;
-        width: 84.2%;
-        padding-top: 48px;
+        width: auto;
+        padding: 0;
+        padding: 48px 0 0;
+        margin: 0 5.33%;
     }
 
     .company_access li {
