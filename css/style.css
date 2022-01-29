@@ -66,6 +66,7 @@ body {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 h1 {
@@ -726,4 +727,23 @@ footer {
         z-index: 100;
         width: 26.66%;
     }
+}
+
+/* スライダー */
+
+.slick-dots {
+    bottom: 30px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slick-next {
+    display: none !important;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
