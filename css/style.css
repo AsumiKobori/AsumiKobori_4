@@ -748,3 +748,13 @@ footer {
 .slick-dotted.slick-slider {
     margin-bottom: 0;
 }
+
+.GALLERY_photo .slick-dots {
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+}
+
+.GALLERY_photo li {
+    width: auto;
+}
