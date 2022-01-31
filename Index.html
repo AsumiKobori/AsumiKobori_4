@@ -179,7 +179,7 @@
 
         <ul class="GALLERY_photo">
 
-
+            <li><img src="images/pc_gallary_01-100.jpg" alt="ギャラリー1-2"></li>
             <li><img src="images\pc_gallary_05-100.jpg" alt="ギャラリー5"></li>
             <li><img src="images/pc_gallary_04-100.jpg" alt="ギャラリー4"></li>
             <li><img src="images/pc_gallary_03-100.jpg" alt="ギャラリー3"></li>
@@ -296,10 +296,23 @@
             });
 
             $('.slider').slick({
-                // autoplay: true,
+                autoplay: true,
                 autoplaySpeed: 2000,
                 dots: true
             });
+
+
+
+            $(".GALLERY_photo").slick({
+                // autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true, // スライドのループを有効にするか
+                slidesToShow: 5, // 表示するスライド数を設定
+                slidesToScroll: 1 // スクロールするスライド数を設定
+            });
+
+
 
         });
 

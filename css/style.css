@@ -255,6 +255,7 @@ h1 {
 /* イベントタイトル */
 
 .EVENT {
+    padding-top: 70px;
     padding-bottom: 80px;
     margin: 0 auto;
 }
