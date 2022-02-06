@@ -321,7 +321,14 @@
                 dots: true,
                 infinite: true, // スライドのループを有効にするか
                 slidesToShow: 5, // 表示するスライド数を設定
-                slidesToScroll: 1 // スクロールするスライド数を設定
+                slidesToScroll: 1, // スクロールするスライド数を設定
+                slidesToShow: 5,
+                responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }]
             });
 
             $(window).on('load', function () {
@@ -329,6 +336,8 @@
             });
 
         });
+
+
 
     </script>
 
